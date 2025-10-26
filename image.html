@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipped Code Fix</title>
+    <style>
+        /* Base page settings */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+            overflow: hidden; 
+        }
+
+        /* This div is ONLY for pushing the content to the right edge.
+        It does NOT do the flip.
+        */
+        .right-align-pusher {
+            text-align: right; /* Pushes block-level content to the right */
+            width: 100%;
+            padding-right: 20px; /* Space between content and right edge */
+            padding-top: 50px; /* Push content down slightly from the top */
+        }
+
+        /*
+        1. THE CONTAINER APPLIES THE MAIN FLIP (FOR POSITIONING)
+        */
+        .container {
+            display: inline-block; /* Essential to treat content as a single block */
+            transform: scaleX(-1);
+            /* Important: The content is now on the right, extending left, but the text is backward. */
+        }
+
+        /*
+        2. THE CODE BLOCK FLIPS ITSELF BACK (TO MAKE THE TEXT READABLE)
+        */
+        .code-block {
+            transform: scaleX(-1);
+            
+            /* Styling to make it look like a code editor block */
+            background-color: #2e3436;
+            color: #d3d7cf;
+            font-family: monospace;
+            font-size: 16px;
+            padding: 15px;
+            border-radius: 5px;
+            
+            /* Control the width of the code block */
+            width: 700px; 
+            height: auto;
+            white-space: pre; 
+        }
+        
+        pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="right-align-pusher">
+        <div class="container">
+            <div class="code-block">
+                <pre>
+&lt;daeh&gt;
+&lt;link rel="stylesheet" href="<span>sudogram.css"</span>&gt;
+&lt;/head&gt;
+&lt;body style="height:3000px; padding-top: 100px;"&gt;
+&lt;div class="main-tital"&gt;
+&lt;p class="sudogram"&gt;SUDOGRAM&lt;/p&gt;
+&lt;div class="df"&gt;
+&lt;div class="searchicon"&gt;
+&lt;button onclick="search()"&gt;&lt;img src="search.svg"&gt;&lt;/button&gt;
+&lt;div class="search"&gt;search&lt;/div&gt;
+&lt;/div&gt;
+&lt;input class="text" type="text" placeholder="search" onkeydown="if(event.key==='Enter'){search()}"&gt;
+&lt;button class="vido"&gt;
+&lt;img t src="voice-search-icon.svg"&gt;
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

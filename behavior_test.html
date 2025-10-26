@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Behavior Test</title>
+</head>
+<body>
+  <h2>🖥️ Behavior Module Test</h2>
+  <div id="log"></div>
+
+  <script>
+    function logEvent(event) {
+      const logDiv = document.getElementById("log");
+      const p = document.createElement("p");
+      p.textContent = new Date().toLocaleTimeString() + " - " + event;
+      logDiv.appendChild(p);
+    }
+
+    // Detect tab switch (page visibility)
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        logEvent("🚨 Tab switched (Suspicious)");
+      } else {
+        logEvent("✅ Tab back to focus");
+      }
+    });
+
+    // Detect copy/paste
+    document.addEventListener("copy", () => logEvent("🚨 Copy detected"));
+    document.addEventListener("paste", () => logEvent("🚨 Paste detected"));
+
+    // Detect inactivity (no key/mouse for 10 sec)
+    let timer;
+    function resetTimer() {
+      clearTimeout(timer);
+      timer = setTimeout(() => logEvent("⚠️ Inactive for 10 seconds"), 10000);
+    }
+    document.addEventListener("mousemove", resetTimer);
+    document.addEventListener("keydown", resetTimer);
+    resetTimer();
+  </script>
+</body>
+</html>
