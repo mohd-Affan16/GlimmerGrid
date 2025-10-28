@@ -1,14 +1,14 @@
-#GlimmerGrid
-
+GlimmerGrid
+---
 Welcome to GlimmerGrid, an exciting e-commerce web project crafted with HTML, CSS, and JavaScript! 
 This is my personal passion project where I’ve explored these skills hands-on,
 turning ideas into a functional shopping site with a unique design.
----
-##Overview
 
+##Overview
+---
 GlimmerGrid is a beginner-friendly e-commerce platform designed to showcase products and categories in an engaging way.
 Currently at version 1.0.00, it’s a work in progress with ongoing improvements, hosted right here in this repository.
-----
+
 ##File Structure
 
 The project is organized into a clear folder and file setup:
