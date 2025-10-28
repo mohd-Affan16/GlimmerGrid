@@ -12,17 +12,17 @@ Currently at version 1.0.00, it’s a work in progress with ongoing improvements
 File Structure
 ---
 The project is organized into a clear folder and file setup:
--fontawesome/: Contains the fontawesome.min.css and all.min.css files, providing the iconic elements (e.g., cart, search icons) that enhance the navigation and user interface.
+- fontawesome/: Contains the fontawesome.min.css and all.min.css files, providing the iconic elements (e.g., cart, search icons) that enhance the navigation and user interface.
 
--img/: Houses all the images used in the project, including product photos like phones, watches, T-shirts, and goggles, ensuring a visual appeal for the product grid.
+- img/: Houses all the images used in the project, including product photos like phones, watches, T-shirts, and goggles, ensuring a visual appeal for the product grid.
 
--login_page/: Includes Welcome_page.html, Sign_in.html, and Login.html, offering a starting point for user authentication (though not fully implemented in this version, meaning the login functionality is present but not yet complete or functional).
+- login_page/: Includes Welcome_page.html, Sign_in.html, and Login.html, offering a starting point for user authentication (though not fully implemented in this version, meaning the login functionality is present but not yet complete or functional).
 
--index.html: The main HTML file that structures the site, featuring the header, main content, and footer.
+- index.html: The main HTML file that structures the site, featuring the header, main content, and footer.
 
--style.css: The CSS file that styles the site with a purple and yellow theme, hover effects, and responsive layouts.
+- style.css: The CSS file that styles the site with a purple and yellow theme, hover effects, and responsive layouts.
 
--main.js: The JavaScript file that powers dynamic features like the product grid, tab navigation, and real-time search functionality.
+- main.js: The JavaScript file that powers dynamic features like the product grid, tab navigation, and real-time search functionality.
 
 Features
 ---
