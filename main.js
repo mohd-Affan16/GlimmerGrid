@@ -21,6 +21,7 @@ let homeproductshtml='';
 
 homeproductdetail.forEach((product) => {
   homeproductshtml=homeproductshtml+`
+  <div class="home_dev">
     <div class="home_common_design">
       <div> <img   class="imgsubmain" src="${product.image}"> </div>
         <div class="cartcontent">
@@ -29,6 +30,7 @@ homeproductdetail.forEach((product) => {
               <div><button class="buynow">Buy Now</button></div>
       </div>
     </div>
+  </div>
   `;
 });
 document.querySelector('.js_homecontaner').
@@ -51,11 +53,13 @@ const Categoriesproductdetails=[{
 let Categoriesproducthtml='';
 Categoriesproductdetails.forEach((product)=>{
   Categoriesproducthtml=Categoriesproducthtml+
-  `  <div class="Categories_common_design">
-        <div class="cartcontent2">
-           <div><img src="${product.image}" class="Categories_img"></div>
-               <div class="heading2"> ${product.heading}</div>
-         </div>
+  `  <div class="categories_dev">
+        <div class="Categories_common_design">
+              <div class="cartcontent2">
+                <div><img src="${product.image}" class="Categories_img"></div>
+                    <div class="heading2"> ${product.heading}</div>
+              </div>
+       </div>
       </div>`
 })
 

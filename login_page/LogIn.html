@@ -3,12 +3,16 @@
     <head>
          <link href="./fontawesome/css/fontawesome.min.css" rel="stylesheet">
          <link href="./fontawesome/css/all.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>
+               
+                 
                 body{
                     background-color: black;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
                 }
                 .bodydiv{  
                     border: 2px solid #facc15;
@@ -16,6 +20,7 @@
                     min-height: 500px;
                     height: 210px;
                     border-radius: 10px;
+                   
                 }
                 .headdev{
                     background-color: #9333ea;
@@ -92,6 +97,27 @@
                     flex-direction: column;
                     gap:10px;
                     margin-left: 20px;
+                }
+                  @media(max-width:950px){
+                  body{
+                   display:inline-block;
+                   background-color:black;
+                  }
+                  .headdev{
+                    width: 100%;
+                    
+                  }
+                .maindiv{
+                     width: 100%;
+                     height: 82%;
+                }
+                .bodydiv{
+                    width: 375px;
+                    min-height:400px ;
+                    margin-top: 80px;
+                    border: 2px solid #facc15;
+                }
+               
                 }
         </style>
     </head>

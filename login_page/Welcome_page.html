@@ -4,6 +4,7 @@
 <head>
      <link href="./fontawesome/css/fontawesome.min.css" rel="stylesheet">
      <link href="./fontawesome/css/all.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>GlimmerGrid</title>
    <style>
 
@@ -12,7 +13,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
     }
     .main{
         display: flex;
@@ -94,6 +96,31 @@
         flex-direction: column;
         gap:10px;
         text-align: center;/
+    }
+   
+    @media(max-width:950px){
+     
+     body{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+     }
+        .headdev{
+        height: 300px;
+        width: 300px;
+     }
+     .submaindivone{
+        height: 300px;
+        width: 300px;
+     }
+     .maindiv{
+        height: 200px;
+        width: 300px;
+     }
+     .text{
+        font-size: 15px;
+     }
     }
    </style>
 </head>
