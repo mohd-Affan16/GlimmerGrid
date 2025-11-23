@@ -1,7 +1,9 @@
 GlimmerGrid
 ----
+
 Welcome to GlimmerGrid, an exciting e-commerce web project crafted with HTML, CSS, and JavaScript! This is my personal passion project where I’ve explored these skills hands-on, turning ideas into a functional shopping site with a unique design.
 
+--
 Overview
 --
 GlimmerGrid is a beginner-friendly e-commerce platform designed to showcase products and categories in an engaging way. Currently at version 1.0.00, it’s a work in progress with ongoing improvements, hosted right here in this repository.
@@ -14,6 +16,7 @@ index.html: The main HTML file that structures the site, featuring the header, m
 style.css: The CSS file that styles the site with a purple and yellow theme, hover effects, and responsive layouts.
 main.js: The JavaScript file that powers dynamic features like the product grid, tab navigation, and real-time search functionality.
 
+--
 Features
 ----
 GlimmerGrid shines with a range of thoughtfully designed features that bring the e-commerce experience to life:
@@ -29,14 +32,17 @@ Tabbed Content Switching: The site uses JavaScript to toggle content containers 
 
 **Vibrant Design:** A striking purple (#9333ea) and yellow (#facc15) color scheme, complemented by smooth transitions and box shadows, creates an eye-catching aesthetic. The design includes custom styling for buttons, inputs, and product cards, ensuring a cohesive and enjoyable browsing experience.
 
+--
 Challenges & Learnings:
 --
 Building GlimmerGrid came with its share of hurdles—debugging JavaScript for the search filter and aligning CSS hover effects took some trial and error. These challenges taught me the value of breaking problems into smaller steps and leveraging online resources, fueling my growth as a coder.
 
+--
 Stay Tuned:
 --
 Follow this repository for updates as I continue to build and refine GlimmerGrid. More features are on the way, and I’m excited to share the progress!
 
+--
 ## Version History 
 
 | Version   | Date           | Updates |
